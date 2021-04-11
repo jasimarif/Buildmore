@@ -1,0 +1,191 @@
+<% layout('layouts/boilerplate') %>
+    <div class="hero-text-box">
+        <h1>Get dealt honestly.<br>Buy Fast BUILD MORE</h1>
+        <a class="btn btn-full js--scroll-to-plans" href="/about">About Us</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="/gallery">Gallery</a>
+    </div>
+    <section class="section-features js--section-features" id="features">
+        <div class="row">
+            <h2>Buy fast &mdash; Build More</h2>
+            <p class="long-copy">
+                Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for
+                cooking. So let us take care of that, we're really good at it, we promise!
+            </p>
+        </div>
+
+        <div class="row js--wp-1">
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-infinite-outline icon-big"></i>
+                <h3>Up to 365 days/year</h3>
+                <p>
+                    Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage.
+                    You
+                    can also choose to order more flexibly if that's your style.
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-stopwatch-outline icon-big"></i>
+                <h3>Ready in 20 minutes</h3>
+                <p>
+                    You're only twenty minutes away from your delicious and super healthy meals delivered right to your
+                    home. We work with the best chefs in each town to ensure that you're 100% happy.
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-nutrition-outline icon-big"></i>
+                <h3>100% organic</h3>
+                <p>
+                    All our vegetables are fresh, organic and local. Animals are raised without added hormones or
+                    antibiotics. Good for your health, the environment, and it also tastes better!
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-cart-outline icon-big"></i>
+                <h3>Order anything</h3>
+                <p>
+                    We don't limit your creativity, which means you can order whatever you feel like. You can also
+                    choose
+                    from our menu containing over 100 delicious meals. It's up to you!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-meals">
+        <h2>Recently Sold</h2>
+        <ul class="meals-showcase clearfix">
+            <% for(var i=0 ;i < allProperties.length; i++) {%>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="<%= allProperties[i].images[0].url %>" alt="<%= allProperties[i].name %>>">
+                    </figure>
+                </li>
+                <% } %>
+        </ul>
+
+    </section>
+
+
+    <section class="section-cities" id="cities">
+        <div class="row">
+            <h2>Currently In Stock</h2>
+        </div>
+        <div class="row js--wp-3">
+            <% for(var i=0 ;i < allProperties.length; i++) {%>
+                <div class="col span-1-of-4 box">
+                    <img src="<%= allProperties[i].images[0].url %>" alt="<%= allProperties[i].name %>>">
+                    <h3><%= allProperties[i].name %></h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-location icon-small"></i>
+                        <%=allProperties[i].location %>
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-pricetag icon-small"></i>
+                        <%=allProperties[i].price %>
+                    </div>
+
+                </div>
+                <% } %>
+                    
+        </div>
+
+    </section>
+
+    <section class="section-testimonials">
+        <div class="row">
+            <h2>Our customers can't live without us</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so
+                    Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+                    <cite><img src="/resources/img/customer-1.jpg">Alberto Duncan</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food
+                    delivery
+                    here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+                    <cite><img src="/resources/img/customer-2.jpg">Joana Silva</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and
+                    ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                    <cite><img src="/resources/img/customer-3.jpg">Milton Chapman</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-plans js--section-plans" id="plans">
+        <div class="row">
+            <h2>Start eating healthy today</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="plan-box js--wp-4">
+                    <div>
+                        <h3>Premium</h3>
+                        <p class="plan-price">$399 <span>/ month</span></p>
+                        <p class="plan-price-meal">That's only 13.30$ per meal</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal every day</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-full">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Pro</h3>
+                        <p class="plan-price">$149 <span>/ month</span></p>
+                        <p class="plan-price-meal">That's only 14.90$ per meal</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal 10 days/month</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Starter</h3>
+                        <p class="plan-price">19$ <span>/ meal</span></p>
+                        <p class="plan-price-meal">&nbsp;</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal</li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Order from 8 am to 12 pm</li>
+                            <li><i class="ion-ios-close-empty icon-small"></i></li>
+                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

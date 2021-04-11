@@ -1,0 +1,65 @@
+<%- layout('/layouts/boilerplateAllPages')%>
+
+    <section class="section-features js--section-features" id="features"> 
+        <div class="row">
+            <h2>ADD NEW PROPERTY</h2>
+            <section class="section-form">
+                <div class="row">
+                    <form method="POST" action="/addProperty" class="contact-form"  enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="property[name]" id="name" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="location">Location</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="property[location]" id="email" placeholder="Location" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="price">Price</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="property[price]" id="price" placeholder="Price" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Description</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="property[message]" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Image</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="file" name="image" value="Upload" multiple>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Submit!">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </section>
+        </div>
+
+
+    </section>
