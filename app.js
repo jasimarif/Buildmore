@@ -68,7 +68,7 @@ app.post('/addProperty', upload.array('image'), async (req,res)=>{
     res.redirect("/addProperty")
 
 })
-
-app.listen(8000, () => {
-    console.log('Serving on port 3000')
+const port =  process.env.PORT || 8000
+app.listen(port, () => {
+    console.log(`Serving on port ${port}`)
 })
