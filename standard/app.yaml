@@ -13,4 +13,10 @@
 
 # [START gae_quickstart_yaml]
 runtime: nodejs14
+env:
+  CLOUDINARY_CLOUD_NAME : dpccghcgi
+  CLOUDINARY_KEY : 677324921861648
+  CLOUDINARY_SECRET : lpNspf5WU0nTLmi3ZLgtkk8spxo
+
+  MONGODB_URL : mongodb+srv://Jasim:7m6GvX1BJbMZhTLk@cluster0.9ugwp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 # [END gae_quickstart_yaml]

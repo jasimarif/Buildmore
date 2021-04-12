@@ -71,4 +71,4 @@ app.post('/addProperty', upload.array('image'), async (req,res)=>{
 const port =  process.env.PORT || 8000
 app.listen(port, () => {
     console.log(`Serving on port ${port}`)
-})
+}) 
