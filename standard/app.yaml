@@ -13,7 +13,6 @@
 
 # [START gae_quickstart_yaml]
 runtime: nodejs14
-api_version: 1
 handlers:
   - url: /static
     static_dir: public
