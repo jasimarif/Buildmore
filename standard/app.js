@@ -13,7 +13,7 @@ const {storage} = require('./cloudinary')
 var upload = multer({storage})
 
 const Property = require('./models/property')
-const dbUrl = process.env.MONGODB_URL
+const dbUrl = "mongodb+srv://Jasim:7m6GvX1BJbMZhTLk@cluster0.9ugwp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 // 'mongodb://localhost:27017/property'
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
