@@ -9,7 +9,7 @@
     "url": "https://github.com/jasimarif/Buildmore.git"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=v14.0.0"
   }, 
 
   "scripts": {
