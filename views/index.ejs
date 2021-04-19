@@ -62,23 +62,7 @@
         <div class="row">
             <h2>Currently In Stock</h2>
         </div>
-        <div class="row js--wp-3">
-            <% for(var i=0 ;i < allProperties.length; i++) {%>
-                <div class="col span-1-of-4 box">
-                    <img src="<%= allProperties[i].images[0].url %>" alt="<%= allProperties[i].name %>>">
-                    <h3><%= allProperties[i].name %></h3>
-                    <div class="city-feature">
-                        <i class="ion-ios-location icon-small"></i>
-                        <%=allProperties[i].location %>
-                    </div>
-                    <div class="city-feature">
-                        <i class="ion-ios-pricetag icon-small"></i>
-                        <%=allProperties[i].price %>
-                    </div>
-
-                </div>
-                <% } %>
-                    
+     
         </div>
 
     </section>
